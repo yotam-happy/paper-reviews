@@ -19,4 +19,7 @@ Here are some papers on the topic:
     - interestingly: show via an a/b test that even a simple strategy of collecting 1% unbiased data, and training a model over both biased and unbiased together produces a model that is better than the baseline, and the lift outweights the cost of obtaining the 1% unbiased dataset. 
     - Propose 4 'distilation' methods for using biased and unbiased data together, however the term 'distilation' is used quite broadly...
     - Label distilation: 2 approaches. (1) Training biased and unbiased models, and using a 'bridge' dataset, which are random set of items, and encouraging the models to predict the same for these. (2) training an unbiased model using the small unbiased training set and imputing the labels for the biased model
-    - 
+    - Feature distilation: train a teacher model to have good unbiased features and use that to train a student model.
+    - Sample distilation: use models from other works and another heuristic approach to train a model.
+    - Model distilation: ... some other stuff
+    - This is a catch-all paper with too much methods in it. An attempt at classifying different 'distilation' methods that I didn't like and a big evaluation table that does not give a clear insight...
