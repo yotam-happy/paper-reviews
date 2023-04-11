@@ -14,3 +14,9 @@ Here are some papers on the topic:
     - A multitask collaborative filtering approach for debiasing, which causality inspired motivation.
     - They factorize both biased and unbiased datasets into dense vectors simultaneously, and add use a regulazation term to enforce a degree of similarity between the same item/user similar in both factorization tasks.
     - They show that one should optimize the task for the unbiased case using a causality based approach, showing that one should simply model the unbiased data well. Not sure I like the long motivation for coming up with a trivial result. Perhaps the interesting thing is providing a theoretic basis for their regularization approach. 
+
+3. A General Knowledge Distillation Framework for Counterfactual Recommendation via Uniform Data (https://dl.acm.org/doi/pdf/10.1145/3397271.3401083)
+    - interestingly: show via an a/b test that even a simple strategy of collecting 1% unbiased data, and training a model over both biased and unbiased together produces a model that is better than the baseline, and the lift outweights the cost of obtaining the 1% unbiased dataset. 
+    - Propose 4 'distilation' methods for using biased and unbiased data together, however the term 'distilation' is used quite broadly...
+    - Label distilation: 2 approaches. (1) Training biased and unbiased models, and using a 'bridge' dataset, which are random set of items, and encouraging the models to predict the same for these. (2) training an unbiased model using the small unbiased training set and imputing the labels for the biased model
+    - 
