@@ -24,6 +24,7 @@ Here are some papers on the topic:
 
 4. AutoDebias: Learning to Debias for Recommendation (https://dl.acm.org/doi/pdf/10.1145/3404835.3462919)
     - Theoretically motivated method to use uniform data for debiasing.
-    - The model is similar to a combination of IPS-like weights and label imputation. Specific attention is given to areas where the biased data does not cover at all (i.e. sample propensity is 0, so IPS cannot be used at all)
+    - The model is similar to a combination of IPS-like weights and label imputation (similar to doubly robust). Specific attention is given to areas where the biased data does not cover at all (i.e. sample propensity is 0, so IPS cannot be used at all)
     - The model is optimized by a meta learning approach where the model itself is optimized, and the weights controling the model are optimized at the same time.
     - The results are pretty good compared to other approaches and the paper is well written. This is an interesting approach.
+    - Need to dive more thoroughly into this
